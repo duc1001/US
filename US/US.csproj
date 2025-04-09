@@ -46,14 +46,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="notification.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="notification.Designer.cs">
+      <DependentUpon>notification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationSubscriptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotificationSubscriptions.Designer.cs">
+      <DependentUpon>NotificationSubscriptions.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="promotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="promotion.Designer.cs">
+      <DependentUpon>promotion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="notification.resx">
+      <DependentUpon>notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotificationSubscriptions.resx">
+      <DependentUpon>NotificationSubscriptions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
